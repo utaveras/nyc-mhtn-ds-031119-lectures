@@ -1,17 +1,25 @@
 # Make a function to determine if a number is odd or even
 
-def odd_even():
-    pass
+def odd_even(x):
+    return x % 2 == 0;
 
 # Make a function that takes in a list of numbers and returns the numbers that are even
 
 def even_list(numbers):
-    pass
+    Selected = []
+    for n in numbers:
+        if odd_even(n):
+            Selected.append(n)
+    return Selected
 
 # Given a list return the unique names in the list
 
 def unique_names(list_of_names):
-    pass
+    Selected = []
+    for name in list_of_names:
+        if name not in Selected:
+            Selected.append(name)
+    return Selected
 
 # Make a function that determines if a word is a palindrome
 
